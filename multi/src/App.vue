@@ -4,7 +4,7 @@
     <br />
     <input v-model="num" />
     <Counter
-      v-for="n in parseInt(num)"
+      v-for="n in getNumber()"
       v-bind:key="n"
       v-bind:counter="n"
       v-bind:index="n"
